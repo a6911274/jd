@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  *{
+    margin:0;
+    padding: 0;
+  }
+    div{
+      width: 100%;
+
+    }
+    ul{
+      width: 100%;
+      display: inline-block;
+    }
+    ul>li{
+      float: left;
+      
+      text-align: center;
+      list-style: none;
+      border:1px solid pink;
+      padding:10px;
+      box-sizing: border-box;
+
+    }
+    @media (max-width: 700px){
+      ul>li{
+        width: 100%;
+        background-color: #f0f0f0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <ul>
+      <li>美图</li>
+      <li>美图</li>
+      <li>美图</li>
+      <li>美图</li>
+      <li>美图</li>
+      <li>美图</li>
+    </ul>
+  </div>
+  <div id="div"></div>
+  <script>
+    
+    document.getElementById("div").innerHTML=screen.availWidth;
+  </script>
+</body>
+</html>
